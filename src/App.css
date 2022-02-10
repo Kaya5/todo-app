@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+
+body {
+  background: rgb(112, 185, 245);
+  background: url("https://cdn.pixabay.com/photo/2018/09/22/10/27/check-3694935_1280.jpg");
+  background-size: 100pc;
+  color: white;
+}
+
+.todos-form {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  margin: 20px auto;
+  margin-right: 8%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  margin: 0;
+}
+
+.add-todo {
+  height: 51px;
+  border-radius: 3px;
+  border: none;
+  margin-left: 20px;
+  background: white;
+  cursor: pointer;
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.add-todo:hover {
+  background: teal;
+  color: whitesmoke;
+}
+
+.todo-input {
+  height: 50px;
+  width: 300px;
+  outline: none;
+  border-radius: 3px;
+  border: none;
+  cursor: text;
+}
+
+.todos {
+  font-size: 15px;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  zoom: 1.1;
+  position: relative;
+  width: 20px;
+}
+
+li {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+i {
+  cursor: pointer;
+}
+
+.single-todo {
+  width: 55%;
+  border: 1px inset rgba(255, 255, 255, 0.5);
+  /* box-shadow: 0px 0px 2px 0px; */
+  /* box-sizing: content-box; */
+  margin-bottom: 0.5%;
+  padding: 3px 0;
+}
+
+.buttons {
+  display: flex;
+  position: absolute;
+  right: 26%;
+}
+
+#edit {
+  color: seagreen;
+  padding: 5%;
+  font-size: 1.2rem;
+}
+
+#delete {
+  color: crimson;
+  padding: 5%;
+  font-size: 1.2rem;
+}
+
+.todo {
+  /* margin-left: 0.8%; */
+}
+.todo::first-letter {
+  text-transform: uppercase;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: rgb(255, 255, 255, 0.5);
+  font-size: small;
+}
+
+.create {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  text-align: center;
+  font-size: calc(16px + 2vh);
+  font-family: "Waterfall", cursive;
+  color: #f1f1f1;
+}
+
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.date {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: larger;
+  
+}
+
+
+.today {
+  width: 100%;
+  text-align: center;
+  margin: 2% auto;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.editing {
+  /* height: 22px; */
+  border-radius: 2px;
+  /* border: none; */
+  background: whitesmoke;
+  cursor: text;
+  padding: auto;
+  /* width: 200px; */
+}
+
+i[class="ri-arrow-right-circle-fill"] {
+  color: green;
+  font-size: 1.5rem;
+  padding: 1% 2%;
+}
+
+.edit-div {
+  display: flex;
+}
